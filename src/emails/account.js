@@ -5,7 +5,7 @@ const sendWelcomeEmail=(email,name)=>{
         to: email,
         from: 'tubakhantts@gmail.com',
         subject: 'This is my first creation!',
-        text:'Welcome to the app, ${name}. Let me know how you get along with the app.'
+        text:'Welcome to the app, '+name+'. Let me know how you get along with the app.'
         })
 }
 
@@ -14,7 +14,7 @@ const sendRemoveAccountEmail=(email,name)=>{
         to: email,
         from: 'tubakhantts@gmail.com',
         subject: 'Account Deletion !',
-        text:' ${name}, your account has been deleted.'
+        text:name+', your account has been deleted.'
         })
 }
 
